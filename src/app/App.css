@@ -1,0 +1,17 @@
+.app title {
+  display: inline;
+}
+.app title .title-message {
+  text-align: center;
+  line-height: 100px;
+  font-family: cursive;
+}
+
+.app main {
+  padding: 25px;
+  width: 40%;
+  margin: 0 auto;
+}
+.app main .promo-image {
+  width: 100%;
+}
