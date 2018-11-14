@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
-import './App.css';
+import ConnectionStatus from './connection/ConnectionStatus';
+import connectionService from './connection/connection.service';
 import promo from '../assets/promo.png';
+import './app.css';
 
 class App extends Component {
   render() {
+    const { status, features } = connectionService;
+    
     return (
       <div className="app">
         <title>
@@ -12,6 +16,10 @@ class App extends Component {
 
         <main>
           <img className="promo-image" src={promo} alt='' />
+          <ConnectionStatus 
+            status={status}
+            features={features}
+          />
         </main>
       </div>
     );
